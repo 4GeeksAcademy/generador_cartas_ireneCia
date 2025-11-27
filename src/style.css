@@ -1,5 +1,58 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: white;
+    background: green;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-generator{
+   position:relative;
+    width: 200px;
+  height: 300px;
+  background: white;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 15px;
+  font-size: 40px;
+}
+
+.top-card {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 32px;
+}
+
+
+.number-card {
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  line-height: 1;
+}
+
+
+.bottom-card {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(180deg);
+  font-size: 32px;
+}
+
+
+.spade,
+.club {
+  color: black;
+}
+
+
+.heart,
+.diamond {
+  color: red;
 }
